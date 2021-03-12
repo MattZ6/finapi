@@ -21,7 +21,23 @@ app.post('/account', (req, res) => {
     name,
     cpf,
     statements: [],
+    created_at: new Date(),
+    updated_at: new Date(),
   });
+
+  res.status(201).send();
+});
+
+app.get('/statement', (req, res) => {
+  const { cpf } = req.headers;
+
+  const customer = customers.find(customer => customer.cpf === cpf);
+
+  if (!customer) {
+    return res.status(422).json({ error: 'Customer not found' });
+  }
+
+  return res.json(customer.statements);
 });
 
 app.listen(3333);
