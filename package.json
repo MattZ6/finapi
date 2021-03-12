@@ -1,8 +1,13 @@
 {
-  "name": "node-concepts",
+  "name": "finapi",
   "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
+  "author": {
+    "name": "Matheus Felipe Zanin",
+    "email": "matt_z6@hotmail.com",
+    "url": "https://github.com/mattz6"
+  },
   "scripts": {
     "dev": "nodemon src/server.js"
   },
