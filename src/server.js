@@ -13,7 +13,7 @@ function verifyIfExistsAccountCPF(req, res, next) {
   const customer = customers.find(customer => customer.cpf === cpf);
 
   if (!customer) {
-    return res.status(422).json({ error: 'Customer not found' });
+    return res.status(404).json({ error: 'Customer not found' });
   }
 
   req.customer = customer;
@@ -64,6 +64,14 @@ app.put('/account', verifyIfExistsAccountCPF, (req, res) => {
 
   customer.name = name;
   customer.updated_at = new Date();
+
+  return res.status(204).send();
+});
+
+app.delete('/account', verifyIfExistsAccountCPF, (req, res) => {
+  const { customer } = req;
+
+  customers.splice(customer, 1);
 
   return res.status(204).send();
 });
