@@ -49,7 +49,17 @@ app.post('/account', (req, res) => {
     updated_at: new Date(),
   });
 
-  res.status(201).send();
+  return res.status(201).send();
+});
+
+app.put('/account', verifyIfExistsAccountCPF, (req, res) => {
+  const { customer } = req;
+  const { name } = req.body;
+
+  customer.name = name;
+  customer.updated_at = new Date();
+
+  return res.status(204).send();
 });
 
 app.get('/statement', verifyIfExistsAccountCPF, (req, res) => {
