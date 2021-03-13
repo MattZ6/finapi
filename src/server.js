@@ -31,6 +31,12 @@ function getBalance(statement) {
   }, 0);
 }
 
+app.get('/account', verifyIfExistsAccountCPF, (req, res) => {
+  const { customer } = req;
+
+  return res.json(customer);
+});
+
 app.post('/account', (req, res) => {
   const { cpf, name } = req.body;
 
