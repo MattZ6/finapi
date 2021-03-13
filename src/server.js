@@ -135,4 +135,12 @@ app.post('/withdraw', verifyIfExistsAccountCPF, (req, res) => {
   return res.status(201).json(operation);
 });
 
+app.get('/balance', verifyIfExistsAccountCPF, (req, res) => {
+  const { customer } = req;
+
+  const balance = getBalance(customer.statement);
+
+  return res.json({ balance });
+});
+
 app.listen(3333);
