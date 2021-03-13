@@ -1,6 +1,7 @@
 {
   "name": "finapi",
-  "version": "0.0.0",
+  "description": "Fundamentos do Node JS com Express.js do Ignite Bootcamp",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "author": {
@@ -8,6 +9,8 @@
     "email": "matt_z6@hotmail.com",
     "url": "https://github.com/mattz6"
   },
+  "repository": "https://github.com/mattz6/finapi",
+  "bugs": "https://github.com/mattz6/finapi/issues",
   "scripts": {
     "dev": "nodemon src/server.js"
   },
