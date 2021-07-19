@@ -1,6 +1,6 @@
 {
   "name": "finapi",
-  "description": "Fundamentos do Node JS com Express.js do Ignite Bootcamp",
+  "description": "🔥 Aplicação simples para controle de financeiro construída na trilha de NodeJS — Ignite",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
