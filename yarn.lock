@@ -272,10 +272,10 @@ fsevents@~2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
-git-commit-msg-linter@4.7.3:
-  version "4.7.3"
-  resolved "https://registry.yarnpkg.com/git-commit-msg-linter/-/git-commit-msg-linter-4.7.3.tgz#d568938cf0e3822edb749ca8b55ba0c700a976b6"
-  integrity sha512-abXRANhVFBnsctMJpd2q/in3mx+fzEj7GCLjWTu3e2TpAh7Rkycq+6S+f/5bG0FlhNOHQkk8ERH5dbwv71lrLg==
+git-commit-msg-linter@4.7.4:
+  version "4.7.4"
+  resolved "https://registry.yarnpkg.com/git-commit-msg-linter/-/git-commit-msg-linter-4.7.4.tgz#0c30d905d95c45ef884685437b98b50fd3d73977"
+  integrity sha512-/V32ebRKtn2dvdLARVNk8yw9G2tYQGlAZndGSMFo1U/E/PGSlIjE/dw08eIQgaV6dYCMpKoQ89BX1Qm7awFKhQ==
   dependencies:
     chalk "^2.4.2"
     did-you-mean "^0.0.1"
