@@ -15,7 +15,7 @@
     "dev": "nodemon src/server.js"
   },
   "devDependencies": {
-    "git-commit-msg-linter": "4.9.4",
+    "git-commit-msg-linter": "4.10.0",
     "nodemon": "2.0.22"
   },
   "dependencies": {
