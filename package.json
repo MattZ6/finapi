@@ -1,7 +1,7 @@
 {
   "name": "finapi",
   "description": "🔥 Aplicação simples para controle de financeiro construída na trilha de NodeJS — Ignite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "author": {
